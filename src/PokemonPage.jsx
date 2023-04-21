@@ -7,9 +7,8 @@ import ErrorMessage from './ErrorMessage'
 
 const formatName = (nameWithDash) => nameWithDash.replace('-', ' ')
 
-const PokemonPage = ({ pokemonList,previous,next }) => {
+const PokemonPage = ({ previous,next }) => {
   //get max_id from pokemonList size
-  const max_id = pokemonList.length
   const { name } = useParams()
   const { data: pokemon, error, isLoading } = useApi(`https://pokeapi.co/api/v2/pokemon/${name}`)
 
