@@ -4,3 +4,6 @@ node_modules/
 #cypress files
 cypress/videos/
 cypress/screenshots/
+
+
+.env
